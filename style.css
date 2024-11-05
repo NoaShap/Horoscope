@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+/* Horoscope Container */
+.horoscope-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sign {
+  width: 220px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.sign:hover {
+  transform: scale(1.05);
+}
+
+label {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Horoscope Text Styling */
+.horoscope {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+  font-size: 1em;
+  background-color: rgba(255, 236, 210, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Show horoscope text when checkbox is checked */
+input[type="checkbox"]:checked + label + .horoscope {
+  display: block;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Zodiac-Specific Styles */
+#leo ~ label {
+  background: url('https://example.com/leo-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ff6f61;
+}
+
+#sagittarius ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#aries ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#virgo ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#capricorn ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#scorpio ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#aquarius ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#pisces ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#taurus ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#cancer ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+#libra ~ label {
+  background: url('./libra.png')  no-repeat center;
+  background-size: 50px 50px;
+  color: #ffba92;
+}
+
+#gemini ~ label {
+  background: url('https://example.com/sagittarius-icon.png') no-repeat center;
+  background-size: 30px 30px;
+  color: #ffba92;
+}
+
+/* (Repeat similar styles for other signs with different colors and icons) */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
